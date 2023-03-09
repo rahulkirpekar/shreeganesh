@@ -1,0 +1,29 @@
+static(NonAccess Modifiers):-
+-----------------------------
+Student
+	int rno;
+	String name;
+	int std;
+	static String sname;
+----------------------------------------
+Student s[] = new Student[10000];
+
+
+  s[0]    s[1]    s[2]    s[3]    s[4] 
+------------------------------------------
+rno	|	|	|	|	|<---PerObject---UNIQUE
+name	|	|	|	|	|<---PerObject---UNIQUE
+std	|	|	|	|	|<---PerObject---UNIQUE
+------------------------------------------
+  |	    |	   |	   |	    |
+---------------------------------------------
+		  |					
+		sname="DPS"	|<---ONE COPY FOR ONE CLASS
+----------------------------------------------------------------------------------
+s[0].sname="DPS";
+sname---"New Meghdoot School";//19byte
+4) obj.scan()
+3) object--rno name std
+2) main
+1) sname---setSchoolName(sname);
+

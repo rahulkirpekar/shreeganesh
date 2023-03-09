@@ -1,0 +1,66 @@
+Inheritance:- To reduce Code/logic Duplication
+------------  To reuse code/logic[Code Reusibilty]
+
+
+	
+		    class-A[Parent,Super,Base]		
+		    addFun();// 10 lines
+		        |
+	------------------------------------	
+	   |		   |		  |	<-----[Child/Derive/Sub]
+	class-B		class-C		class-D
+
+
+
+			Type's of Inheritance[HH:MM:S]---[IS-A relation]
+			----------------------
+
+[1) Single	2) MultiLevel	3) Hierarchical]  4) Multiple		5) Hybrid
+-----------	--------------  ----------------  -------------		-------------
+    A(no1)		A(no1)		A(no1)	       A(no1) B(no2)		A(no1)	
+    |			|		|	       |      |			|
+    B(no2)		B(no2)	   -----------	       ---------	   B(no2)  C(no3)	
+A obj;// no1		|	   |	     |		   |			|
+B obj;// no1,no2	C(no3)	   B(no2)    C(no3) 	   C(no3)		D(no4)
+		A obj;//no1	   A obj;//no1		A obj;//no1	A obj;//no1	
+		B obj;//no1,no2	   B obj;//no1,no2	B obj;//no2     B obj;//no1,no2
+		C obj;//no1,no2,no3|C obj;//no1,no3     C obj;//no1,no2,no3
+									C obj;//no1,no3
+									D obj;//no1,no2,no3,no4
+
+
+
+
+
+1) Single Inheritance:-
+-------------------------
+
+Employee(Super/Parent/Base)
+  |
+Programmer(Sub/Child/Derived)		
+
+"Programmer IS-A Employee"// TRUE		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
